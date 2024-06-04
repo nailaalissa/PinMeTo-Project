@@ -16,3 +16,26 @@ Open Git Bash or your preferred terminal and navigate to the directory where you
 
 ```bash
 git clone https://github.com/nailaalissa/Map-Project.git
+Navigate to the Project Directory
+
+
+Change to the project directory:
+```bash
+cd Map-Project
+
+3. Install Required npm Packages
+Install the npm packages for both the client and backend:
+
+```bash
+npm install
+4. Start the Server Side
+Open a terminal and start the server side using the following command:
+
+```bash
+npm start
+5. Start the Client Part
+Open a new terminal or command prompt, change the directory to the client folder inside your project, and start the client part:
+
+```bash
+cd client
+npm start
