@@ -1,35 +1,9 @@
-// import React from 'react';
-
-// export default function Widget() {
-//   const companyName = 'Lexicon';
-
-//   return (
-//     <div>
-//       <p style={{ textAlign: 'center' }}>
-//         <h1>Map Widget</h1>
-//         <h4>
-//           Copy the url link to embed the map widget
-//           <br />
-//           <br />
-//           &lt;iframe src={`http://localhost:3000/MapContainer?companyName=${companyName}`}{' '}
-//           title="Widget" width="100%" height="600"&gt;&lt;/iframe&gt;
-//         </h4>
-//       </p>
-//       <iframe
-//         src={`http://localhost:3000/MapContainer?companyName=${companyName}`}
-//         title="Widget"
-//         width="100%"
-//         height="600"
-//       ></iframe>
-//     </div>
-//   );
-// }
 import React, { useState } from 'react';
 
 export default function Widget() {
-  const [companyName, setCompanyName] = useState('Lexicon');
+  const [companyName, setCompanyName] = useState('lexicon');
   const [iframeSrc, setIframeSrc] = useState(
-    `http://localhost:3000/MapContainer?companyName=Lexicon`,
+    `http://localhost:3000/MapContainer?companyName=lexicon`,
   );
   const [showLink, setShowLink] = useState(false);
 
@@ -48,7 +22,7 @@ export default function Widget() {
         <h1 className="margin">Map Widget</h1>
         <div className="widgetLink">
           <select className="selectComany" value={companyName} onChange={handleCompanyChange}>
-            <option value="Lexicon">Lexicon</option>
+            <option value="lexicon">Lexicon</option>
             <option value="acme">acme</option>
           </select>
           <br />
